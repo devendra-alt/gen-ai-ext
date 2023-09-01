@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <article class="generative-ai-container" aria-label="generative-ai">
+      <section class="generative-ai-chat-container">
+      </section>
+      <section class="generative-ai-query">
+        <span class="generative-ai-query-info" aria-hidden="true"></span>
+        <form>
+          <textarea
+            type="text"
+            name="generative-ai-query-input"
+            id="generative-ai-query-input"
+            maxlength="2048"
+            rows="1"
+            placeholder="Send a message"
+            ></textarea>
+          <button type="submit" class="query-submit-button"></button>
+          </form>
+        </form>
+      </section>
+    </article>
+  </body>
+</html>
