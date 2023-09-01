@@ -2,7 +2,7 @@ import { addQuestionElement } from './conversation.js';
 
 const userInputField = document.querySelector('#generative-ai-query-input');
 const generativeAiQueryInfo = document.querySelector(
-  '.generative-ai-query-info'
+  '.generative-ai-query-info',
 );
 
 const userInput = (event, generativeAi) => {

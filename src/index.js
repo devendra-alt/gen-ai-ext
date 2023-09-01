@@ -8,6 +8,4 @@ const generativeAi = new GenerativeAI();
 
 //* * user input handler */
 const querySubmitButton = document.querySelector('.query-submit-button');
-querySubmitButton.addEventListener('click', (event) =>
-  userInput(event, generativeAi)
-);
+querySubmitButton.addEventListener('click', (event) => userInput(event, generativeAi));

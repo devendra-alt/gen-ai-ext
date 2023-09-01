@@ -2,7 +2,7 @@ import botIcon from '../assets/bot.svg';
 import userIcon from '../assets/user.svg';
 
 const generativeAiChatContainer = document.querySelector(
-  '.generative-ai-chat-container'
+  '.generative-ai-chat-container',
 );
 export const addQuestionElement = (query) => {
   const questionEl = document.createElement('div');

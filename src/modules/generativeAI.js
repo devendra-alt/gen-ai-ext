@@ -5,8 +5,7 @@ class GenerativeAI {
   #GENERATIVE_AI_URL;
 
   constructor() {
-    this.#GENERATIVE_AI_URL =
-      'https://gen-ai-ext-backend.onrender.com/generativeAI/generate';
+    this.#GENERATIVE_AI_URL = 'https://gen-ai-ext-backend.onrender.com/generativeAI/generate';
   }
 
   async getResponse(query) {
