@@ -1,0 +1,96 @@
+/** default style */
+
+body {
+  background-color: #525252;
+  display: flex;
+  justify-content: flex-end;
+}
+
+:root {
+  --message-invalid: #fff3cd;
+  --message-invalid-text: #8c6c10;
+}
+
+/** generative-ai-container */
+
+.generative-ai-container {
+  width: 35rem;
+  height: 40rem;
+  background-color: #fff;
+  position: relative;
+  overflow: auto;
+}
+
+.generative-ai-chat-container {
+  margin: 2rem;
+  min-height: 70%;
+  background: url(/src/assets/bot.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+}
+
+.generative-ai-user-query,
+.generative-ai-respond {
+  display: flex;
+  gap: 1rem;
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+
+.generative-ai-respond {
+  margin-bottom: 1rem;
+}
+
+/** generative-ai query */
+
+.generative-ai-query {
+  padding: 0.5rem 1rem;
+}
+
+.generative-ai-query > form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+  padding: 0.5rem;
+}
+
+#generative-ai-query-input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.query-submit-button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.query-button-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.generative-ai-query-info[aria-hidden='true'] {
+  display: none;
+}
+
+.generative-ai-query-info[aria-hidden='false'] {
+  padding: 0.5rem;
+  background-color: var(--message-invalid);
+  color: var(--message-invalid-text);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+}
